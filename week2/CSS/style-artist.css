@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(227, 242, 253);
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: rgb(13, 71, 161);
+    font-size: 50px;
+
+}
+
+h2 {
+    color: rgb(33, 150, 243);
+    font-size: 20px;
+}
