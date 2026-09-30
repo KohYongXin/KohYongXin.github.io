@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Edu+QLD+Hand:wght@400..700&family=Lilita+One&family=ZCOOL+KuaiLe&display=swap');
+
+h1 {
+    font-family: "Lilita One", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    background-color: hsl(60, 100%, 50%);
+    border-top: 5px dashed hsl(0, 0%, 2%);
+    border-bottom: 5px solid hsl(0, 0%, 2%);
+    border-right: 5px dotted hsl(0, 0%, 2%);
+    border-radius: 10px;
+}
+
+h2 {
+    font-family: "DM Serif Display", serif;
+    font-weight: bold;
+    text-align: right;
+    text-shadow: 6px 9px 5px hsl(53.17deg 44.64% 33.64%);
+}
+
+h3 {
+    font-family: "ZCOOL KuaiLe", cursive;
+    font-weight: normal;
+    font-style: italic;
+}
+
+p {
+    font-family: "Edu QLD Hand", cursive;
+    font-weight: justify;
+    line-height: 3;
+    background-color: hsl(182, 100%, 50%);
+    background-image: url('/week3/images/sky.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.text-bold {
+    font-weight: bold;
+    background-color: #d0ff00;
+    color: hsl(0, 0%, 0%);
+    font-size: 25px;
+}
