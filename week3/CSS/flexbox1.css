@@ -3,8 +3,8 @@
 body {
     font-family: 'Oxygen', sans-serif;
     background-color: rgba(246, 245, 239);
+    max-width: 1024px;
     margin: auto;
-
 }
 
 .flex-box {
