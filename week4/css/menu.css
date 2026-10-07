@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&display=swap');
+
+.big-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 20px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 12px;
+}
+
+
+button {
+    background: rgba(249, 97, 43);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.menu {
+    display: flex;
+    padding: 10px 20px;
+    gap: 30px;
+}
+
+.orange {
+    color: rgba(249, 97, 43);
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+}
+
+.phone-number {
+    padding: 5px 15px;
+}
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .menu {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    button {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .phone-number {
+        display: none;
+    }
+
+    .phone-icon {
+        display: none;
+    }
+
+}
