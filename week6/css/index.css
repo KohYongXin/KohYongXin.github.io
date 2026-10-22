@@ -9,10 +9,63 @@ body {
     font-family: "Manrope", sans-serif;
 }
 
-.banner {
+h1 {
+    font-size: 62px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+.banner-section {
     min-height: 600px;
     background-image: url(../images/background.jpg);
     background-size: cover;
+}
+
+.desktop-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: right;
+    padding: 20px 80px;
+}
+
+.contact-button {
+    background-color: #F84646;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.mobile-header {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.mobile-button {
+    background-color: #F84646;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.burger-menu {
+    padding: 10px;
 }
 
 .subscribe-button {
@@ -20,7 +73,8 @@ body {
     border: none;
     padding: 15px 20px;
     color: white;
-    border-radius: 3px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .email-input {
@@ -38,129 +92,257 @@ body {
     border-radius: 3px;
 }
 
-.banner-content {
+.banner-text-content {
     width: 50%;
     padding: 60px;
 }
 
-.menu-items {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: right;
-    padding: 20px 80px;
-}
 
-.İletişim {
-    background-color: #F84646;
-    border: none;
-    color: white;
-    border-radius: 3px;
-    justify-content: right;
-    padding: 10px;
-}
-
-.mobile-header {
-    display: none;
-    justify-content: space-between;
-}
-
-.İletişim1 {
-    background-color: #F84646;
-    border: none;
-    color: white;
-    border-radius: 3px;
-    padding: 10px;
-    display: none;
-}
-
-.burger {
-    display: none;
-    padding: 10px;
-}
-
-
-.middle {
-    max-width: 1024px;
+.services-section {
+    max-width: 1200px;
     margin: auto;
     padding: 60px;
 }
 
-.middle-content {
+.services-header {
     text-align: center;
 }
 
-.content {
+.services-grid {
     display: flex;
     flex-wrap: wrap;
 }
 
-.content-icon {
+.service-card {
     width: 33%;
     text-align: center;
+    padding: 20px;
 }
 
-.red {
+.red-section {
     text-align: center;
     background-color: #F84646;
     color: white;
+    padding: 40px 20px;
 }
 
-.red-content2 {
+.red-list {
     display: flex;
-    min-height: 500px;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 150px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.mobile-img {
+    display: none;
+}
+
+.info-block-section {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    gap: 40px;
+}
+
+.info-block-reverse {
+    flex-direction: row-reverse;
+}
+
+.info-text-side {
+    flex: 1;
+}
+
+.info-image {
+    flex: 1;
+}
+
+.info-button {
+    background-color: #F84646;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.partners-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+}
+
+.partners-mobile-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.partner-logo {
+    background-color: white;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 300px;
+    width: 170px;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.partner-logo img {
+    max-width: 134px;
+    max-height: 67px;
+    height: auto;
+    width: auto;
+}
+
+.partners-desktop-img {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact-btn {
+    background-color: #F84646;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.footer-section {
+    background-color: #F84646;
+    color: white;
+    padding: 60px 40px 30px 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.footer-bottom {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 @media (max-width:1024px) {
-    .banner {
+    .banner-section {
         background-position: center 10%;
     }
 
-    .banner-content {
+    .banner-text-content {
         width: 70%;
     }
 
-    .content-icon {
+    .service-card {
         width: 50%;
     }
 }
 
 @media(max-width:810px) {
+    .desktop-header {
+        display: none;
+    }
+
     .mobile-header {
-        display: none;
-        gap: 20px;
-        align-items: center;
-        justify-content: right;
-        padding: 20px 3px;
-
-    }
-
-    .menu-items {
-        display: none;
-    }
-
-    .burger {
-        display: block
-    }
-
-    .İletişim1 {
-        display: block
+        display: flex;
     }
 
 }
 
-
 @media (max-width:550px) {
-    .banner {
+    .banner-section {
         background-position: center 80%;
     }
 
-    .banner-content {
+    .banner-text-content {
         width: 100%;
         text-align: center;
     }
 
-    .content-icon {
+    .service-card {
         width: 100%;
     }
+
+    .red-list {
+        flex-direction: column;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: flex;
+    }
+
+    .info-block-section {
+        flex-direction: column;
+    }
+
+    .info-block-reverse {
+        flex-direction: column;
+    }
+
+    .partners-desktop-img {
+        display: none;
+    }
+
+    .partners-mobile-list {
+        display: flex;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-bottom {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
 }
