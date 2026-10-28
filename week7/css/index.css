@@ -6,23 +6,26 @@
 
 body {
     margin: 0;
+    font-family: "Work Sans", sans-serif;
 }
 
 .header-section {
     background-color: black;
     color: white;
-    margin: 0;
+    min-height: 100vh;
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 10px;
+    padding: 20px 40px;
     position: absolute;
     width: 100%;
-    max-width: 1100px;
-
+    max-width: 1400px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .header-logo {
@@ -44,22 +47,26 @@ body {
     display: none;
 }
 
+.phone-arrow {
+    display: none;
+}
+
 .banner-content {
     display: flex;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .banner-text-content {
     flex: 1;
     width: 50%;
     padding: 60px;
-    padding-top: 80px;
     font-family: "Work Sans", sans-serif;
 }
 
 h1 {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 80px;
-    margin: 0%;
+    font-size: 60px;
 }
 
 .arrow {
@@ -68,6 +75,27 @@ h1 {
 
 .popular-header {
     text-align: center;
+}
+
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 48px;
+    margin: 0;
+    padding: 20px;
+    font-weight: normal;
+}
+
+h4 {
+    font-family: "Lora", serif;
+    font-style: italic;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.popular-header p {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .menu-grid {
@@ -79,11 +107,6 @@ h1 {
     margin: auto;
 }
 
-.button {
-    font-family: "Work Sans", sans-serif;
-}
-
-
 .food {
     flex: 1;
     align-items: center;
@@ -94,18 +117,18 @@ h1 {
     flex: 2;
 }
 
-
-
 .menu-grid .dessert .img {
     background-image: url(../images/dessert.jpg);
-    background-size: cover;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     background-position: center;
     height: 300px;
 }
 
 .menu-grid .chef .img {
     background-image: url(../images/chef.jpg);
-    background-size: cover;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     background-position: center;
     height: 500px;
 
@@ -113,12 +136,86 @@ h1 {
 
 .menu-grid .seasonal .img {
     background-image: url(../images/seasonal.jpg);
-    background-size: cover;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     background-position: center;
     height: 300px;
 }
 
+h3 {
+    font-family: "Bebas Neue", sans-serif;
+    margin: 10px;
+}
 
+.chef {
+    font-size: 25px;
+}
+
+.view-btn {
+    padding: 5px 10px;
+    font-size: 10px;
+    border: 1px solid #333;
+    background: transparent;
+    cursor: pointer;
+}
+
+.atmosphere-section {
+    min-height: 600px;
+    background-image: url(../images/at-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+}
+
+.atmosphere-content {
+    max-width: 500px;
+}
+
+.atmosphere-content h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 48px;
+    margin: 0;
+    font-weight: normal;
+    padding: 0;
+}
+
+.footer-section {
+    min-height: 350px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    font-family: "Bebas Neue", sans-serif;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.footer-content p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
 
 
 @media (max-width:1024px) {
@@ -130,8 +227,95 @@ h1 {
         display: flex
     }
 
-    .header {
-        padding: 20px 40px;
+    .banner-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-top: 80px;
     }
 
+    .banner-text-content {
+        width: 100%;
+        padding: 40px 20px;
+        text-align: left;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .phone-arrow {
+        display: block;
+        width: 100%;
+        height: 450px;
+    }
+
+    .phone-arrow img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu-grid {
+        flex-direction: column;
+        padding: 0;
+        gap: 40px;
+    }
+
+    .food {
+        width: 100%;
+        margin-bottom: 0;
+        font-size: 36px;
+        flex: 1;
+    }
+
+    .menu-grid .chef .img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .menu-grid .dessert .img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .menu-grid .seasonal .img {
+        width: 100%;
+        height: 300px;
+    }
+
+
+}
+
+@media (max-width: 640px) {
+    .header {
+        padding: 15px 20px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .banner-text-content p {
+        font-size: 13px;
+    }
+
+    .menu-grid {
+        padding: 10px;
+    }
+
+    .atmosphere-section {
+        padding: 40px 20px;
+        min-height: 450px;
+    }
+
+    .atmosphere-content {
+        text-align: center;
+    }
+
+    .atmosphere-content h2 {
+        font-size: 36px;
+    }
+
+    .footer-section {
+        padding: 40px 15px;
+    }
 }
