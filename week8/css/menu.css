@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+    background-color: black;
+}
+
+.menu-content {
+    background-image: url(../images/menu.arrow.png);
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+.menu-content h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+    margin: 0;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+.title {
+    text-align: right;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    background: linear-gradient(180deg, transparent, black);
+    padding: 10px;
+    width: 100%;
+}
+
+.butter {
+    background-image: url(../images/butter.png);
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    width: 500px;
+    display: flex;
+    align-items: end;
+}
+
+.chocolate {
+    background-image: url(../images/chocolate.png);
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    width: 500px;
+    display: flex;
+    align-items: end;
+}
+
+.duck {
+    background-image: url(../images/duck.png);
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    width: 500px;
+    display: flex;
+    align-items: end;
+}
+
+.main-course {
+    background-color: white;
+    display: flex;
+    flex: 1;
+}
+
+.main-course-content {
+    padding: 40px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.food-name {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.main-course-content p {
+    font-family: "Lora", sans-serif;
+    font-size: 14px;
+}
+
+.main-course-content h1 {
+    font-size: 90px;
+    font-weight: normal;
+
+}
+
+.main-course-content h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
