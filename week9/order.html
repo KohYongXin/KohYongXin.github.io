@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order-Romaliya</title>
+    <link rel="stylesheet" href="css/headerfooter.css">
+    <link rel="stylesheet" href="css/order.css">
+</head>
+
+<body>
+    <div class="header-section">
+        <div class="header">
+            <div class="header-logo">
+                <img src="images/logo.png" alt="Romaliya" width="40" height="auto">
+                <div>Romaliya</div>
+            </div>
+
+            <div class="desktop-header">
+                <div class="header-link"><a href="index.html">Home</a></div>
+                <div class="header-link"><a href="menu.html">Menu</a></div>
+                <div class="header-link"><a href="order.html">Order</a></div>
+                <div class="header-link">Promotion</div>
+                <div class="header-link">About Us</div>
+                <div class="header-link">Our Restaurant</div>
+                <img src="images/order.png" alt="order" width="20" height="auto">
+            </div>
+
+            <div class="phone-header">
+                <img src="images/menu.png" alt="order" width="20" height="auto">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="order-content">
+        <p>ROMALIYA TAKEOUT</p>
+        <h1>ORDER ONLINE</h1>
+    </div>
+
+    <div class="order-section">
+        <div class="order-section-content">
+            <p>FROM OUR KITCHEN TO YOUR TABLE</p>
+            <h2>Choose your favourites</h2>
+            <p>
+                Select a quantity, add your dishes to the cart,<br>
+                then review everything before checkout.
+            </p>
+        </div>
+        <div class="view-cart-btn"><button>VIEW CART</button></div>
+    </div>
+
+    <div class="chef-Signatures">
+        <div class="chef-Signatures-content">
+            <p>CHEF'S SIGNATURES</p>
+            <h3>FINE DINING FAVORITES</h3>
+        </div>
+
+        <div class="chef-Signatures-menu">
+            <div class="chef-seafood">
+                <div><img src="images/chef-seafood.png" alt="image"></div>
+                <p>SIGNATURE SEAFOOD</p>
+                <h4>BUTTER-POACHED LOBSTER</h4>
+                <h5>Tender lobster gently poached in butter for a rich, delicate finish.</h5>
+                <p>$ 88</p>
+
+                <div class="order-list">
+                    <div>
+                        <form>
+                            <button type="button" class="value-button decrease"
+                                aria-label="Decrease quantity">-</button>
+                            <input type="number" class="quantity" value="1" min="1" />
+                            <button type="button" class="value-button increase"
+                                aria-label="Increase quantity">+</button>
+                        </form>
+                    </div>
+                    <div class="add-to-cart-btn"><button>ADD TO CART</button></div>
+                    <div class="view-cart-btn2"><button>VIEW CART</button></div>
+                </div>
+            </div>
+
+
+            <div class="chef-pick">
+                <div><img src="images/chef-pick.png" alt="image"></div>
+                <p>CHEF'S PICK</p>
+                <h4>DUCK BREAST WITH CHERRY SAUCE</h4>
+                <h5>Juicy duck breast paired with a bright cherry sauce for a sweet-savory balance.</h5>
+                <p>$ 58</p>
+
+                <div class="order-list">
+                    <div>
+                        <form>
+                            <button type="button" class="value-button decrease"
+                                aria-label="Decrease quantity">-</button>
+                            <input type="number" class="quantity" value="1" min="1" />
+                            <button type="button" class="value-button increase"
+                                aria-label="Increase quantity">+</button>
+                        </form>
+                    </div>
+                    <div class="add-to-cart-btn"><button>ADD TO CART</button></div>
+                    <div class="view-cart-btn2"><button>VIEW CART</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        document.querySelectorAll('form').forEach((form) => {
+            form.addEventListener('click', (event) => {
+                const button = event.target.closest('.increase, .decrease');
+                if (!button) return;
+
+                const input = form.querySelector('.quantity');
+                const value = Number.parseInt(input.value, 10) || 1;
+                const change = button.classList.contains('increase') ? 1 : -1;
+
+                input.value = Math.max(1, value + change);
+            });
+        });
+    </script>
+</body>
+
+</html>

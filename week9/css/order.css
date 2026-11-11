@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+.order-content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/order-arrow.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 1000px;
+    padding: 60px 20px;
+    padding-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.order-content h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+    margin: 0;
+}
+
+.order-section {
+    display: flex;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: end;
+    justify-content: center;
+}
+
+.order-section-content {
+    flex: 1;
+}
+
+.order-section-content h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.order-section-content p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 13px;
+}
+
+.order-section-content p span {
+    font-family: "Lora", sans-serif;
+}
+
+.view-cart-btn {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.view-cart-btn button {
+    background: transparent;
+    border: 1px solid rgb(108, 101, 101);
+    font-family: "Work Sans", sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+    padding: 15px 40px;
+}
+
+.chef-Signatures {
+    padding: 60px;
+    background-color: black;
+    color: white;
+}
+
+.chef-Signatures-content h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.chef-Signatures-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.chef-seafood {
+    flex: 1;
+    margin: 0%;
+    background-color: #333333;
+}
+
+.chef-pick {
+    flex: 1;
+    margin: 0%;
+    background-color: #333333;
+}
+
+.order-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+}
+
+form {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.value-button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 33.33%;
+    height: 40px;
+    text-align: center;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+}
+
+.value-button:hover {
+    cursor: pointer;
+}
+
+form .decrease {
+    margin-right: -4px;
+}
+
+form .increase {
+    margin-left: -4px;
+}
+
+input.quantity {
+    background: transparent;
+    color: white;
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 33.33%;
+    height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

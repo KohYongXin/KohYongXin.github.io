@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+    background-color: black;
+}
+
+.header-section {
+    background-color: black;
+    position: relative;
+    width: 100%;
+}
+
+.menu-content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/menu.arrow.png);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding: 60px 20px;
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+}
+
+.menu-content h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+    margin: 0;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+.title-menu {
+    text-align: right;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    background: linear-gradient(180deg, transparent, black);
+    padding: 10px;
+    width: 100%;
+}
+
+.butter {
+    background-image: url(../images/butter.png);
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    width: 500px;
+    display: flex;
+    align-items: end;
+}
+
+.chocolate {
+    background-image: url(../images/chocolate.png);
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    width: 500px;
+    display: flex;
+    align-items: end;
+}
+
+.duck {
+    background-image: url(../images/duck.png);
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    width: 500px;
+    display: flex;
+    align-items: end;
+}
+
+.main-course {
+    background-color: white;
+    display: flex;
+    flex: 1;
+}
+
+.main-course-content {
+    padding: 40px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.food-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-items {
+    border-bottom: 1px solid black;
+}
+
+.main-course-content p {
+    font-family: "Lora", sans-serif;
+    font-size: 14px;
+}
+
+.main-course-content h1 {
+    font-size: 90px;
+    font-weight: normal;
+
+}
+
+.main-course-content h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.dessert-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/dessert-bg.png);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.dessert-items {
+    background-color: white;
+    display: flex;
+    padding: 60px 40px;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.dessert-card {
+    flex: 1;
+    max-width: 250px;
+}
+
+.dessert-card img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    display: block;
+}
+
+.dessert-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dessert-card.down {
+    margin-top: 100px;
+}
+
+.dessert-name h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.best-croctails {
+    background-image: url(../images/best-croctails-bg.png);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    padding: 100px;
+}
+
+.croctails-title h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 55px;
+    margin: 0 0 5px 0;
+    font-weight: normal;
+}
+
+.croctails-title p {
+    font-family: work Sans, sans-serif;
+    font-size: 11px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    width: fit-content;
+    border-bottom: 1px solid white;
+}
+
+.croctails-info {
+    max-width: 500px;
+}
+
+.croctails-info-box p {
+    font-size: 13px;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+.croctails-btn {
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+
+@media (max-width:1024px) {
+    .menu-items {
+        flex-direction: column;
+    }
+
+    .main-course {
+        flex-direction: column;
+    }
+
+    .dessert-items {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .dessert-card {
+        max-width: 480px;
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .dessert-card img {
+        height: 420px;
+        object-fit: cover;
+    }
+
+    .dessert-card.down {
+        margin-top: 0;
+        display: block;
+    }
+
+    .dessert-card.down {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media (max-width:640px) {
+    .main-course-img {
+        display: none;
+    }
+}
