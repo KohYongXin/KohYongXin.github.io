@@ -38,14 +38,15 @@
     display: none;
 }
 
-.header-link {
+.header-link a {
     cursor: pointer;
     color: white;
+    text-decoration: none;
 }
 
 .footer-section {
     min-height: 350px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/footer-bg.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url(../images/footer-bg.png);
     background-size: cover;
     background-position: center;
     color: white;

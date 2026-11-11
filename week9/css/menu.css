@@ -10,12 +10,6 @@ body {
     background-color: black;
 }
 
-.header-section {
-    background-color: black;
-    position: relative;
-    width: 100%;
-}
-
 .menu-content {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/menu.arrow.png);
     background-size: cover;
@@ -213,6 +207,12 @@ body {
     font-family: "Work Sans", sans-serif;
     font-size: 11px;
     cursor: pointer;
+}
+
+@media (max-width:1536px) {
+    .header {
+        position: relative;
+    }
 }
 
 
