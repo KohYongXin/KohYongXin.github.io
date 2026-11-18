@@ -65,7 +65,10 @@ body {
 
 .specials-content {
     padding-top: 30px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .specials-content h2 {
@@ -129,11 +132,339 @@ body {
     padding: 10px 15px;
 }
 
+.romantic-section {
+    background-image: url(../images/romantic-bg.jpg);
+    background-size: cover;
+    background-position: top;
+    min-height: 500px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.romantic-section h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: 60px;
+    margin: 0;
+}
 
+.romantic-section h2 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.romantic-section p {
+    font-family: "Lora", sans-serif;
+    width: 50%;
+    padding: 20px;
+}
+
+.container {
+    width: 1000px;
+    margin: 50px auto;
+}
+
+.comp-dessert {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.comp-dessert img {
+    width: 600px;
+    display: block;
+}
+
+.comp-dessert h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.course-set {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-direction: row-reverse;
+    margin-top: -200px;
+    margin-left: 100px;
+}
+
+.course-set img {
+    width: 500px;
+    display: block;
+}
+
+.course-set h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    text-align: left;
+
+}
+
+.comp-glass {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: -100px;
+    margin-left: 200px;
+}
+
+.comp-glass img {
+    width: 400px;
+    display: block;
+}
+
+.comp-glass h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.container-bottom {
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 12px;
+}
+
+.container-bottom button {
+    background: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: "Work Sans", sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 5px 20px;
+}
+
+.membership {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/membership-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.membership h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: 60px;
+    margin: 0;
+}
+
+.membership p {
+    text-align: center;
+    font-family: "Lora", sans-serif;
+    width: 50%;
+    padding: 20px;
+}
+
+.discount {
+    display: flex;
+    color: white;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.classic {
+    background-image: linear-gradient(rgba(0, 0, 0.6, 1), rgba(0, 0, 0, 0.6)), url(../images/discount-classic.png);
+    background-size: cover;
+    background-position: bottom;
+    flex: 1;
+}
+
+.prestige {
+    background-image: linear-gradient(rgba(0, 0, 0.6, 1), rgba(0, 0, 0, 0.6)), url(../images/discount-prestige.png);
+    background-size: cover;
+    background-position: bottom;
+    flex: 1;
+}
+
+.elite {
+    background-image: linear-gradient(rgba(0, 0, 0.6, 1), rgba(0, 0, 0, 0.6)), url(../images/discount-elite.png);
+    background-size: cover;
+    background-position: bottom;
+    flex: 1;
+}
+
+.star {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Lora", sans-serif;
+}
+
+.star img {
+    width: 20px;
+    height: 20px;
+}
+
+.card {
+    height: 500px;
+    width: 280px;
+    padding: 50px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: normal;
+    margin: 0;
+    font-size: 15px;
+}
+
+.card h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+}
+
+.apply {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.apply button {
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 8px 40px;
+}
 
 @media (max-width:1920px) {
     .header {
         position: static;
     }
+}
+
+@media (max-width:1024px) {
+    .promotion-section {
+        flex-direction: column;
+    }
+
+    .promotion-arrow {
+        width: 100%;
+        min-height: 600px;
+    }
+
+    .promotion-content {
+        width: 70%;
+        padding: 40px 20px;
+        text-align: left;
+    }
+
+    .specials-content p {
+        width: 70%;
+        text-align: center;
+    }
+
+    .specials-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+
+    }
+
+    .romantic-section p {
+        width: 70%;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .comp-dessert,
+    .course-set,
+    .comp-glass {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    .comp-dessert img,
+    .course-set img,
+    .comp-glass img {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .comp-dessert,
+    .course-set,
+    .comp-glass {
+        gap: 0px;
+    }
+
+    .membership p {
+        width: 70%;
+    }
+
+    .discount {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    .card {
+        width: 300px;
+        flex: unset;
+
+    }
+}
+
+
+
+@media (max-width:640px) {
+    .promotion-content {
+        width: 100%;
+        text-align: left;
+    }
+
+    .promotion-content p {
+        font-size: 12px;
+    }
+
+    .promotion-content h1 {
+        font-size: 50px;
+    }
+
+    .promotion-content h2 {
+        font-size: 15px;
+    }
+
+    .specials-content p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .romantic-section p {
+        width: 100%;
+    }
+
+    .membership p {
+        width: 100%;
+    }
+
 }
