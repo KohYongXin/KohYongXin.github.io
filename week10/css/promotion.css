@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.promotion-section {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.promotion-arrow {
+    background-image: url(../images/promotion-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 900px;
+    flex: 1;
+}
+
+.promotion-content {
+    flex: 1;
+    width: 50%;
+    padding: 60px;
+}
+
+.promotion-content p {
+    font-family: "Work Sans", sans-serif;
+}
+
+.promotion-content h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: 70px;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.promotion-content h2 {
+    font-family: "Lora", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.content-btn {
+    padding-top: 20px;
+}
+
+.promotion-content button {
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+    padding: 15px 20px;
+}
+
+.specials-content {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.specials-content h2 {
+    font-family: "Lora", sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.specials-content h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: 60px;
+    margin: 0;
+}
+
+.specials-content p {
+    font-family: "Lora", sans-serif;
+}
+
+.specials-cards {
+    display: flex;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.specials-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+}
+
+.specials-card h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 30px;
+}
+
+.specials-card p {
+    font-family: "Lora", sans-serif;
+    margin: 0;
+    padding: 10px;
+}
+
+.s-btn {
+    padding: 20px;
+}
+
+.specials-card button {
+    background: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: "Work Sans", sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+
+
+
+@media (max-width:1920px) {
+    .header {
+        position: static;
+    }
+}

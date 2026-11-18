@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.order-content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/order-arrow.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 900px;
+    padding: 60px 20px;
+    padding-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.order-content h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.order-content p {
+    font-family: "Work Sans", sans-serif;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 0 0 15px 0;
+}
+
+.order-content p::before {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: white;
+}
+
+.order-content p::after {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: white;
+}
+
+.phone-order {
+    display: none;
+}
+
+.order-section {
+    display: flex;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: end;
+    justify-content: center;
+}
+
+.order-section-content {
+    flex: 1;
+}
+
+.order-section-content h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.order-section-content p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 13px;
+}
+
+.order-section-content h3 {
+    font-family: "Lora", sans-serif;
+    padding: 10px 0px;
+    font-weight: normal;
+}
+
+.view-cart-btn {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 20px;
+}
+
+.view-cart-btn button {
+    background: transparent;
+    border: 1px solid rgb(108, 101, 101);
+    font-family: "Work Sans", sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+    padding: 15px 40px;
+}
+
+.chef-Signatures {
+    padding: 60px 100px;
+    background-color: black;
+    color: white;
+}
+
+.chef-Signatures-content p {
+    font-family: "Work Sans", sans-serif;
+}
+
+.chef-Signatures-content h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.chef-Signatures-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.chef-menu-item {
+    flex: 1;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.chef-menu-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.chef-menu-item p {
+    font-family: "Work Sans", sans-serif;
+}
+
+.chef-menu-item h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0
+}
+
+.chef-menu-item h4 {
+    font-family: "Lora", sans-serif;
+    font-weight: normal;
+}
+
+.chef-menu-item h5 {
+    font-family: "Work Sans", sans-serif;
+    color: #bda16b;
+    font-weight: normal;
+}
+
+.chef-menu-item p,
+.chef-menu-item h3,
+.chef-menu-item h4,
+.chef-menu-item h5 {
+    padding: 0 20px;
+}
+
+.order-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.list-1 {
+    flex: 1;
+}
+
+.add-to-cart-btn button {
+    background-color: #bda16b;
+    color: white;
+    border: none;
+    height: 38px;
+    padding: 0 15px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.view-cart-btn2 button {
+    background: transparent;
+    color: white;
+    border: 1px solid #777;
+    height: 38px;
+    padding: 0 12px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.house-favourite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 80px auto;
+    background-color: black;
+}
+
+.favourite-img {
+    flex: 1;
+}
+
+.favourite-content {
+    color: white;
+    flex: 1;
+}
+
+.favourite-content p {
+    font-family: "Work Sans", sans-serif;
+    margin: 0%;
+}
+
+.favourite-content h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 0%;
+}
+
+.favourite-content h4 {
+    font-family: "Lora", sans-serif;
+    font-weight: normal;
+}
+
+.add-to-cart {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.list-2 {
+    flex: 1/2;
+}
+
+.add-btn button {
+    background-color: white;
+    color: black;
+    border: none;
+    height: 40px;
+    padding: 0 25px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+}
+
+.chef-Signatures-menu2 {
+    background-color: black;
+    color: white;
+    padding: 60px 100px;
+    margin: 0 auto;
+}
+
+.chef-menu-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card-item {
+    flex: 1;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-body h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.card-body h4 {
+    font-family: "Lora", sans-serif;
+    font-weight: normal;
+}
+
+.card-body h5 {
+    font-family: "Work Sans", sans-serif;
+    color: #bda16b;
+    font-weight: normal;
+}
+
+.card-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.btn-add button {
+    width: 100%;
+    height: 38px;
+    background-color: #c2a675;
+    color: white;
+    border: none;
+    font-family: "Work Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-view button {
+    width: 100%;
+    height: 38px;
+    background: transparent;
+    color: white;
+    border: 1px solid #666;
+    font-family: "Work Sans", sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.order-review {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 40px;
+    font-family: "Work Sans", sans-serif;
+}
+
+.order-review h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.order-review h4 {
+    font-family: "Lora", sans-serif;
+    font-weight: normal;
+}
+
+.order-review button {
+    background-color: #c2a675;
+    color: white;
+    border: none;
+    font-family: "Work Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.value-button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 33.33%;
+    height: 40px;
+    text-align: center;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+}
+
+.value-button:hover {
+    cursor: pointer;
+}
+
+form .decrease {
+    margin-right: -4px;
+}
+
+form .increase {
+    margin-left: -4px;
+}
+
+input.quantity {
+    background: transparent;
+    color: white;
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 33.33%;
+    height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media (max-width:1024px) {
+    .order-content {
+        min-height: 600px;
+    }
+
+    .desktop-order {
+        display: none;
+    }
+
+    .phone-order {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order-section {
+        padding: 30px;
+    }
+
+    .order-list {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 20px 20px 20px;
+        gap: 10px;
+    }
+
+    .house-favourite {
+        flex-direction: column;
+    }
+
+    .favourite-content {
+        padding: 20px;
+    }
+
+    .chef-Signatures-menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .chef-menu-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .card-item {
+        flex: 0 0 48%;
+        max-width: 450px;
+        background-color: #333333;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+}
+
+
+@media (max-width:640px) {
+    .header {
+        position: relative;
+    }
+
+    .order-content {
+        min-height: 400px;
+    }
+
+    .order-section {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .view-cart-btn {
+        padding: 0;
+    }
+
+    .chef-Signatures {
+        padding: 20px;
+    }
+
+    .chef-Signatures-menu {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .order-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px 20px 20px;
+        gap: 8px;
+    }
+
+    .list-1 {
+        flex: 1;
+    }
+
+    .house-favourite {
+        flex-direction: column;
+    }
+
+    .favourite-content {
+        padding: 30px;
+    }
+
+    .chef-Signatures-menu2 {
+        padding: 20px;
+    }
+
+    .chef-menu-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+}
