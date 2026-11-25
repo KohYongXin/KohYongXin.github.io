@@ -62,6 +62,25 @@ body {
 .culinary-img {
     display: flex;
     gap: 10px;
+    width: 100%;
+}
+
+.culinary-img1 {
+    background-image: url(../images/culinary1.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    width: 100%;
+    flex: 1;
+}
+
+.culinary-img2 {
+    background-image: url(../images/culinary2.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    width: 100%;
+    flex: 1;
 }
 
 .culinary h1 {
@@ -98,17 +117,122 @@ body {
 .our-commitment-text p {
     font-family: "Lora", sans-serif;
     font-size: 16px;
-    width: 50%;
+    width: 60%;
+    text-align: justify;
 }
 
 .achievements {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/achievements-bg.png);
     background-size: cover;
+    background-position: center;
+}
+
+.achievements-text {
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achievements-text h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: 50px;
+}
+
+.achievements-text p {
+    font-family: "Lora", sans-serif;
+    font-size: 16px;
+    width: 60%;
 }
 
 .achievements-cards {
     display: flex;
-    gap: 20px;
-    min-width: 1400px;
+    gap: 60px;
+    max-width: 1400px;
     margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.card h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    padding: 10px;
+}
+
+@media (max-width:1024px) {
+    .header {
+        position: static;
+    }
+
+    .about-us-arrow {
+        background-image: url(../images/about-us-bg.png);
+        width: 100%;
+        min-height: 600px;
+    }
+
+    .about-us-section {
+        flex-direction: column;
+    }
+
+    .about-us-text h1 {
+        font-size: 70px;
+    }
+
+    .about-us-text {
+        width: 60%;
+    }
+
+    .culinary-img {
+        gap: 0px;
+        width: 100%;
+    }
+
+    .culinary-img1,
+    .culinary-img2 {
+        min-height: 420px;
+    }
+
+    .commitment-img1 {
+        display: none;
+    }
+
+    .commitment-img2 {
+        display: none;
+    }
+
+    .our-commitment {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/commitment1.png);
+        background-position: center;
+        background-size: cover;
+        height: 600px;
+    }
+
+    .achievements-text p {
+        width: 100%;
+    }
+
+    .achievements-cards {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:640px) {
+    .about-us-text {
+        width: 100%;
+    }
+
+    .culinary-img2 {
+        display: none;
+    }
+
+    .culinary p {
+        width: 100%;
+    }
+
+
 }
