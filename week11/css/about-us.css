@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.about-us-section {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.about-us-arrow {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/about-us-bg.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    flex: 3;
+}
+
+.about-us-text {
+    flex: 2;
+    width: 50%;
+    padding: 60px;
+    text-align: center;
+}
+
+.about-us-text h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: 80px;
+    margin: 0px;
+}
+
+.about-us-text h2 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.about-us-text p {
+    font-family: "Lora", sans-serif;
+    font-size: 16px;
+}
+
+.culinary {
+    background-color: white;
+    color: black;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.culinary-img {
+    display: flex;
+    gap: 10px;
+}
+
+.culinary h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: 65px;
+}
+
+.culinary p {
+    width: 75%;
+    font-family: "Lora", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 40px;
+}
+
+.our-commitment {
+    display: flex;
+}
+
+.our-commitment-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-commitment-text h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: 50px;
+}
+
+.our-commitment-text p {
+    font-family: "Lora", sans-serif;
+    font-size: 16px;
+    width: 50%;
+}
+
+.achievements {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/achievements-bg.png);
+    background-size: cover;
+}
+
+.achievements-cards {
+    display: flex;
+    gap: 20px;
+    min-width: 1400px;
+    margin: 0 auto;
+}
